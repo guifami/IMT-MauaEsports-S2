@@ -1,0 +1,22 @@
+<!-- Menu de navegacao -->
+<nav [class.nav-change]="nav_scroll">
+    <a class="brand" routerLink="home">
+        <img src="/assets/images/logo.png" alt="Logo Maua E-Sports">
+    </a>
+        <span>Maua Esports</span>
+        <div class="menu-btn" (click)="menuClick()" [class.active]="isCollapsed"></div>
+        <div class="nav" (click)="menuClick()" [class.active]="isCollapsed">
+            <div class="nav-items">
+                <a href="#" routerLink="home">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#" routerLink="jogos">Jogos</a>
+                <a href="#">Inscrição</a>
+                <div class="spacer"></div>
+                <button id="loginBtn" routerLink="login">Login</button>
+                <p>Ainda não possui um Login?</p>
+                <button id="registerBtn" routerLink="register">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+<router-outlet></router-outlet>

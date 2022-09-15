@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  main{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #050d21, #081d3d, #0c244b);
+  }
+  
+  .register-box {
+    position: absolute;
+    margin-top: 20px;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #e3e3e3;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    transition: 0.5s ease;
+  }
+  
+  .register-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #103d55;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  .register-box .user-box {
+    position: relative;
+  }
+  
+  .register-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #222;
+    outline: none;
+    background: transparent;
+  }
+  .register-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #222;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .register-box .user-box input:focus ~ label,
+  .register-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #103d55;
+    font-size: 12px;
+  }
+  
+  .register-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #103d55;
+    border: solid 2px #103d55;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+
+  .register-box form a:hover {
+    color: #fff;
+  }
+  
+  .register-box a:hover {
+    background: #103d55;
+  }
+  
+  @media (max-width: 570px){
+    .register-box {
+        width: 360px;
+        transition: 0.5s ease;
+      }
+  }

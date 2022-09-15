@@ -1,0 +1,76 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+.middle {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #103d55;
+}
+
+main .middle .game-icons img{
+    display: inline-block;
+    width: 72px;
+    border-radius: 100%;
+    margin: 10px;
+    padding: 5px;
+    transition: 0.5s ease;
+    box-shadow: #000000c1 1px 2px 3px 1.5px;
+}
+
+main .middle .game-icons img:hover{
+    opacity: 85%;
+    transition: 0.5s ease;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1200px){
+    main .middle .game-icons{
+        text-align: center;
+    }
+    main .middle .game-icons img{
+        width: 52px;
+    }
+    main .middle .game-icons{
+        width: 100%
+    }
+}
+
+
+@media (max-width: 950px){
+    main .middle .game-icons img{
+        width: 45px;
+    }
+}
+
+@media (max-width: 830px){
+    main .middle .game-icons{
+        width: 450px;
+    }
+}
+
+@media (max-width: 645px){
+    main .middle .game-icons img{
+        width: 45px;
+    }
+}
+
+@media (max-width: 570px){
+    main .middle .game-icons{
+        width: 380px;
+    }
+}
+
+@media (max-width: 400px){
+    main .middle{
+        text-align: center;
+    }
+    main .middle .game-icons img{
+        width: 36px;
+    }
+}
