@@ -33,7 +33,6 @@ header{
     background: -webkit-linear-gradient(45deg, #9ef6d2, #7ecaed);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 10px 10px 10px 10px #000;
 }
 
 .container h2{
@@ -43,14 +42,7 @@ header{
     font-weight: 400;
     transition: 0.2s ease;
 }
-.title-normal{
-    display: block;
-    transition: 0.2s ease;
-}
-.title-responsive{
-    display: none;
-    transition: 0.2s ease;
-}
+
 .dispositivos{
     width: 100%;
     display: flex;
@@ -105,7 +97,7 @@ header{
 .icon-scroll{
     display: none;
 	position: absolute;
-	top: 560px;
+	top: 600px;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -183,14 +175,6 @@ header{
         text-align: center;
         margin: 0;
     }
-    .title-normal{
-        display: none;
-        transition: 0.2s ease;
-    }
-    .title-responsive{
-        display: block;
-        transition: 0.2s ease;
-    }
 }
 
 @media (max-width: 580px){
@@ -208,8 +192,5 @@ header{
     }
     .icon-scroll{
         display: block;
-    }
-    .title-responsive{
-        font-size: 0.97em;
     }
 }
