@@ -1,5 +1,3 @@
-import { RegisterComponent } from './components/Guilherme/register/register.component';
-import { HomeComponent } from './components/Guilherme/home/home.component';
 // Modules
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -18,6 +16,9 @@ import { FooterComponent } from './components/Guilherme/footer/footer.component'
 import { LoginComponent } from './components/Guilherme/login/login.component';
 import { CarouselComponent } from './components/Guilherme/carousel/carousel.component';
 import { MainComponent } from './components/Guilherme/main/main.component';
+import { SecondMainComponent } from './components/Guilherme/second-main/second-main.component';
+import { RegisterComponent } from './components/Guilherme/register/register.component';
+import { HomeComponent } from './components/Guilherme/home/home.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MainComponent } from './components/Guilherme/main/main.component';
     RegisterComponent,
     HomeComponent,
     CarouselComponent,
-    MainComponent
+    MainComponent,
+    SecondMainComponent
   ],
   imports: [
     BrowserModule,
