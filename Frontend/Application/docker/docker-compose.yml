@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  application:
+    image: guifami/application:v1
+    container_name: IMT-MauaESports-S2
+    ports:
+      - "3000:80"
