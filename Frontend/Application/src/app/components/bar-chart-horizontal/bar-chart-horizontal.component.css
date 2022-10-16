@@ -1,0 +1,22 @@
+.barChartHorizontal{
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1100px){
+    .barChartHorizontal{
+        width: 600px;
+    }
+}
+
+@media (max-width: 800px){
+    .barChartHorizontal{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .barChartHorizontal{
+        width: 90%;
+    }
+}

@@ -1,0 +1,22 @@
+.doughnutChart{
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1100px){
+    .doughnutChart{
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px){
+    .doughnutChart{
+        width: 58%;
+    }
+}
+
+@media (max-width: 768px){
+    .doughnutChart{
+        width: 350px;
+    }
+}

@@ -10,6 +10,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 // Shared Components
 import { NavComponent } from './shared/nav/nav.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { GameTitleComponent } from './shared/game-title/game-title.component';
 // Components
 import { AppComponent } from './app.component';
 import { TitleComponent } from './components/title/title.component';
@@ -17,6 +18,11 @@ import { GamebarComponent } from './components/gamebar/gamebar.component';
 import { LoginComponent } from './components/login/login.component';
 import { MainComponent } from './components/main/main.component';
 import { RegisterComponent } from './components/register/register.component';
+import { BarChartComponent } from './components/bar-chart/bar-chart.component';
+import { BarChartHorizontalComponent } from './components/bar-chart-horizontal/bar-chart-horizontal.component';
+import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
+import { LineChartComponent } from './components/line-chart/line-chart.component';
+import { GridGraficosComponent } from './components/grid-graficos/grid-graficos.component';
 // Games Components
 import { LeagueOfLegendsComponent } from './pages/Jogos/league-of-legends/league-of-legends.component';
 import { TeamfightTacticsComponent } from './pages/Jogos/teamfight-tactics/teamfight-tactics.component';
@@ -31,7 +37,6 @@ import { FifaComponent } from './pages/Jogos/fifa/fifa.component';
 // Pages
 import { HomeComponent } from './pages/home/home.component';
 import { JogosComponent } from './pages/Jogos/Jogos.component';
-
 
 @NgModule({
   declarations: [
@@ -54,7 +59,13 @@ import { JogosComponent } from './pages/Jogos/Jogos.component';
     ValorantComponent,
     CounterStrikeComponent,
     EracingComponent,
-    FifaComponent
+    FifaComponent,
+    GridGraficosComponent,
+    GameTitleComponent,
+    BarChartComponent,
+    BarChartHorizontalComponent,
+    DoughnutChartComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,
