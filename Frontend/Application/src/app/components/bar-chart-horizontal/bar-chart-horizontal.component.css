@@ -1,22 +1,40 @@
 .barChartHorizontal{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
+    transition: 0.2s ease;
+}
+
+@media (max-width: 1800px){
+    .barChartHorizontal{
+        width: 500px;
+        transition: 0.2s ease;
+    }
+}
+
+@media (max-width: 1600px){
+    .barChartHorizontal{
+        width: 420px;
+        transition: 0.2s ease;
+    }
+}
+
+@media (max-width: 1400px){
+    .barChartHorizontal{
+        width: 400px;
+        transition: 0.2s ease;
+    }
+}
+
+@media (max-width: 1300px){
+    .barChartHorizontal{
+        width: 340px;
+        transition: 0.2s ease;
+    }
 }
 
 @media (max-width: 1100px){
     .barChartHorizontal{
-        width: 600px;
-    }
-}
-
-@media (max-width: 800px){
-    .barChartHorizontal{
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px){
-    .barChartHorizontal{
-        width: 90%;
+        width: 80%;
+        transition: 0.2s ease;
     }
 }

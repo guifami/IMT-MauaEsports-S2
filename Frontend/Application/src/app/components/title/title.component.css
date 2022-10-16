@@ -194,3 +194,21 @@ header{
         display: block;
     }
 }
+
+@media (max-width: 350px){
+    .container h1{
+        font-size: 1.8em;
+    }
+    .container h2{
+        font-size: 0.8em;
+    }
+    #saiba-mais{
+        font-size: 12px;
+        width: 100px;
+    }
+    #inscricao{
+        font-size: 12px;
+        margin-left: 10px;
+        width: 100px;
+    }
+}

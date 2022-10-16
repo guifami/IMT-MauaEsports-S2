@@ -1,16 +1,33 @@
 .lineChart{
-    width: 88%;
+    width: 600px;
     margin: 0 auto;
+    transition: 0.2s ease;
+}
+
+@media (max-width: 1800px){
+    .lineChart{
+        width: 510px;
+        transition: 0.2s ease;
+    }
+}
+
+@media (max-width: 1600px){
+    .lineChart{
+        width: 430px;
+        transition: 0.2s ease;
+    }
+}
+
+@media (max-width: 1300px){
+    .lineChart{
+        width: 390px;
+        transition: 0.2s ease;
+    }
 }
 
 @media (max-width: 1100px){
     .lineChart{
-        width: 590px;
-    }
-}
-
-@media (max-width: 675px){
-    .lineChart{
-        width: 90%;
+        width: 80%;
+        transition: 0.2s ease;
     }
 }

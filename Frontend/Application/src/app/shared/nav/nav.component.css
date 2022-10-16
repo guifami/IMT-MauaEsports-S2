@@ -247,3 +247,22 @@ nav .nav .nav-items a:hover:before{
     background: url(/assets/images/nav-icons/close.png)no-repeat;
     background-size: 40px;
 }
+
+@media (max-width: 350px){
+    nav span{
+        font-size: 16px;
+    }
+    nav .nav.active .nav-items{
+        margin: 0;
+        width: 99%;
+    }
+    .nav-items p{
+        font-size: 0.75em;
+    }
+    #loginBtn{
+        width: 90%;
+    }
+    #registerBtn{
+        width: 90%;
+    }
+}

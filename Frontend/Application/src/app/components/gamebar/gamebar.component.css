@@ -11,7 +11,7 @@
     align-items: center;
     position: relative;
     background-color: #081d3d;
-    box-shadow: #000000c1 1px 2px 3px 1.5px;
+    box-shadow: #000000d9 1px 0.1px 3px 1px;
 }
 
 .middle::before {
@@ -99,5 +99,11 @@ main .middle .game-icons img:hover{
     }
     main .middle .game-icons img{
         width: 36px;
+    }
+}
+
+@media (max-width: 380px){
+    main .middle .game-icons img{
+        width: 25px;
     }
 }

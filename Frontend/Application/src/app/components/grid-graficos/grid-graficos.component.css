@@ -3,6 +3,8 @@
   height: 81.5vh;
   grid-template-columns: 65% 35%;
   margin: 0 auto;
+  max-width: 1800px;
+  max-height: 900px;
 }
 
 /* GRAFICOS */
@@ -26,7 +28,7 @@
 
 .grafico-md-2{
   width: 55%;
-  height: 45%;
+  height: 42%;
   background-color: #d7f5ff;
   display: inline-block;
   margin: 0;
@@ -36,76 +38,95 @@
 
 .grafico-sm-2{
   width: 40%;
-  height: 45%;
+  height: 42%;
   background-color: #d7f5ff;
   display: inline-block;
   margin-right: 4px;
   border-radius: 5px;
 }
 
-@media (max-width: 1355px){
-  .container{
-    width: 100%;
+@media (max-width: 1800px){
+  .grafico-md-1{
+    height: 350px;
+    transition: 0.2s ease;
+  }
+  .grafico-sm-1{
+    height: 350px;
+    transition: 0.2s ease;
+  }
+  .grafico-sm-2{
+    height: 260px;
+    transition: 0.2s ease;
+  }
+  .grafico-md-2{
+    height: 260px;
+    transition: 0.2s ease;
+  }
+}
+
+@media (max-width: 1600px){
+  .grafico-sm-2{
+    height: 230px;
+    transition: 0.2s ease;
+  }
+  .grafico-md-2{
+    height: 230px;
+    transition: 0.2s ease;
+  }
+}
+
+@media (max-width: 1400px){
+  .grafico-md-1{
+    height: 280px;
+    transition: 0.2s ease;
+  }
+  .grafico-sm-1{
+    height: 280px;
+    transition: 0.2s ease;
+  }
+}
+
+@media (max-width: 1300px){
+  .grafico-sm-2{
+    height: 200px;
+    transition: 0.2s ease;
+  }
+  .grafico-md-2{
+    height: 200px;
+    transition: 0.2s ease;
   }
 }
 
 @media (max-width: 1100px){
-  .container{
-    width: 80%;
-  }
   .grafico-md-1{
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
+    height: auto;
+    transition: 0.2s ease;
   }
   .grafico-sm-1{
     width: 100%;
+    margin: 0 auto;
+    height: auto;
+    transition: 0.2s ease;
   }
   .grafico-md-2{
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
+    height: auto;
+    transition: 0.2s ease;
   }
   .grafico-sm-2{
     width: 100%;
-    margin: 0;
-  }
-}
-
-@media (max-width: 940px){
-  .grafico-md-1{
-    height: 360px;
-  }
-  .grafico-sm-1{
-    height: 360px;
+    margin: 0 auto;
+    height: auto;
+    transition: 0.2s ease;
   }
 }
 
 @media (max-width: 768px){
   .container{
     width: 95%;
-  }
-}
-
-@media (max-width: 645px){
-  .grafico-md-1{
-    height: 290px;
-  }
-}
-
-@media (max-width: 585px){
-  .grafico-md-1{
-    height: 260px;
-  }
-  .grafico-sm-2{
-    height: 240px;
-  }
-
-  .grafico-md-2{
-    height: 240px;
-  }
-}
-
-@media (max-width: 485px){
-  .grafico-md-1{
-    height: 220px;
+    transition: 0.2s ease;
   }
 }

@@ -98,3 +98,9 @@
         transition: 0.5s ease;
       }
   }
+  @media (max-width: 350px){
+    .register-box {
+        width: 275px;
+        transition: 0.5s ease;
+      }
+  }

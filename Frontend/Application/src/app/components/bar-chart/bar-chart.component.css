@@ -1,3 +1,26 @@
 .barChart{
-    width: 100%;
+    width: 900px;
+    margin: 0 auto;
+    transition: 0.2s ease;
+}
+
+@media (max-width: 1800px){
+    .barChart{
+        width: 700px;
+        transition: 0.2s ease;
+    }
+}
+
+@media (max-width: 1400px){
+    .barChart{
+        width: 550px;
+        transition: 0.2s ease;
+    }
+}
+
+@media (max-width: 1100px){
+    .barChart{
+        width: 90%;
+        transition: 0.2s ease;
+    }
 }
