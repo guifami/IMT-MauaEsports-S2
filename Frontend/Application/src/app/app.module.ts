@@ -20,10 +20,10 @@ import { GamebarComponent } from './components/gamebar/gamebar.component';
 import { LoginComponent } from './components/login/login.component';
 import { MainComponent } from './components/main/main.component';
 import { RegisterComponent } from './components/register/register.component';
-import { BarChartComponent } from './components/bar-chart/bar-chart.component';
-import { BarChartHorizontalComponent } from './components/bar-chart-horizontal/bar-chart-horizontal.component';
-import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
-import { LineChartComponent } from './components/line-chart/line-chart.component';
+import { BarChartComponent } from './components/charts/bar-chart/bar-chart.component';
+import { BarChartHorizontalComponent } from './components/charts/bar-chart-horizontal/bar-chart-horizontal.component';
+import { DoughnutChartComponent } from './components/charts/doughnut-chart/doughnut-chart.component';
+import { LineChartComponent } from './components/charts/line-chart/line-chart.component';
 import { GridGraficosComponent } from './components/grid-graficos/grid-graficos.component';
 // Games Components
 import { LeagueOfLegendsComponent } from './pages/Jogos/league-of-legends/league-of-legends.component';

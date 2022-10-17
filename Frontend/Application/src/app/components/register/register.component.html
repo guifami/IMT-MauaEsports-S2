@@ -3,22 +3,22 @@
     <h2>Cadastro</h2>
     <form>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input [(ngModel)]="requestRegister.login" type="text" name="" required="" [ngModelOptions]="{ standalone: true }">
         <label><fa-icon [icon]="faUser"></fa-icon> Usuário</label>
       </div>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input [(ngModel)]="requestRegister.email" type="text" name="" required="" [ngModelOptions]="{ standalone: true }">
         <label><fa-icon [icon]="faEnvelope"></fa-icon> E-Mail</label>
       </div>
       <div class="user-box">
-        <input type="password" name="" required="">
+        <input [(ngModel)]="requestRegister.senha" type="password" name="" required="" [ngModelOptions]="{ standalone: true }">
         <label><fa-icon [icon]="faKey"></fa-icon> Senha</label>
       </div>
       <div class="user-box">
-        <input type="password" name="" required="">
+        <input [(ngModel)]="requestRegister.confirmeSenha" type="password" name="" required="" [ngModelOptions]="{ standalone: true }">
         <label><fa-icon [icon]="faKey"></fa-icon> Confirme a senha</label>
       </div>
-      <a routerLink="/home">
+      <a (click)="submitRegister()">
         Cadastrar
       </a>
     </form>

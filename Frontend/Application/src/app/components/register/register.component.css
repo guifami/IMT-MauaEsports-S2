@@ -70,6 +70,7 @@
   }
   
   .register-box form a {
+    cursor: pointer;
     position: relative;
     display: inline-block;
     padding: 10px 20px;
