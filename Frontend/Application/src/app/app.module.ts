@@ -67,14 +67,14 @@ import { JogosComponent } from './pages/Jogos/Jogos.component';
     BarChartComponent,
     BarChartHorizontalComponent,
     DoughnutChartComponent,
-    LineChartComponent
+    LineChartComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

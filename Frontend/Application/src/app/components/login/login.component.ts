@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { AlertService } from './../../resources/services/alert.service';
 import { LoginService } from './../../resources/services/login.service';
 import { RequestLogin } from './../../resources/models/RequestLogin';
@@ -17,7 +18,7 @@ export class LoginComponent implements OnInit {
   faEnvelope = faEnvelope
   faKey = faKey
 
-  constructor(private loginService: LoginService, private alertService: AlertService) { }
+  constructor(private loginService: LoginService, private alertService: AlertService, private router: Router) { }
 
   ngOnInit() {
     this.requestLogin = new RequestLogin();
@@ -25,12 +26,11 @@ export class LoginComponent implements OnInit {
 
   public submitLogin(): void{
     this.loginService.submitLogin(this.requestLogin).subscribe(data => {
-      this.alertService.info('Funcionalidade ainda não implementada.', '');
+      this.router.navigate(['home']);
     },
     error => {
       this.alertService.error('Usuário ou senha inválidos.', '');
       console.error(error);
     });
   }
-
 }
