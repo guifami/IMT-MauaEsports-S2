@@ -17,14 +17,16 @@ import { GameTitleComponent } from './shared/game-title/game-title.component';
 import { AppComponent } from './app.component';
 import { TitleComponent } from './components/title/title.component';
 import { GamebarComponent } from './components/gamebar/gamebar.component';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from './pages/login/login.component';
 import { MainComponent } from './components/main/main.component';
-import { RegisterComponent } from './components/register/register.component';
+import { RegisterComponent } from './pages/register/register.component';
 import { BarChartComponent } from './components/charts/bar-chart/bar-chart.component';
 import { BarChartHorizontalComponent } from './components/charts/bar-chart-horizontal/bar-chart-horizontal.component';
 import { DoughnutChartComponent } from './components/charts/doughnut-chart/doughnut-chart.component';
 import { LineChartComponent } from './components/charts/line-chart/line-chart.component';
 import { GridGraficosComponent } from './components/grid-graficos/grid-graficos.component';
+import { AboutComponent } from './pages/about/about.component';
+import { SubscriptionComponent } from './pages/subscription/subscription.component';
 // Games Components
 import { LeagueOfLegendsComponent } from './pages/Jogos/league-of-legends/league-of-legends.component';
 import { TeamfightTacticsComponent } from './pages/Jogos/teamfight-tactics/teamfight-tactics.component';
@@ -68,6 +70,8 @@ import { JogosComponent } from './pages/Jogos/Jogos.component';
     BarChartHorizontalComponent,
     DoughnutChartComponent,
     LineChartComponent,
+    AboutComponent,
+    SubscriptionComponent
   ],
   imports: [
     BrowserModule,

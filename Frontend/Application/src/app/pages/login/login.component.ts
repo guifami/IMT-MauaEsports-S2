@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
-import { AlertService } from './../../resources/services/alert.service';
-import { LoginService } from './../../resources/services/login.service';
-import { RequestLogin } from './../../resources/models/RequestLogin';
+import { AlertService } from '../../resources/services/alert.service';
+import { LoginService } from '../../resources/services/login.service';
+import { RequestLogin } from '../../resources/models/RequestLogin';
 import { Component, OnInit } from '@angular/core';
 import { faEnvelope, faKey, faUser } from '@fortawesome/free-solid-svg-icons';
 
