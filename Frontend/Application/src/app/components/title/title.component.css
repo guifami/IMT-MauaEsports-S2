@@ -7,7 +7,7 @@
     font-family: "Poppins", sans-serif;
   }
 
-header{
+section{
     display: flex;
     justify-content: center;
     background-image: linear-gradient(to bottom, #050d21, #081d3d, #0c244b);
@@ -33,6 +33,7 @@ header{
     background: -webkit-linear-gradient(45deg, #9ef6d2, #7ecaed);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: none;
 }
 
 .container h2{

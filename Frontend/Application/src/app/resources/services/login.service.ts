@@ -1,8 +1,8 @@
-import { RequestLogin } from './../models/RequestLogin';
+import { RequestLogin } from '../models/Requests/RequestLogin';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { ResponseLogin } from '../models/ResponseLogin';
+import { ResponseLogin } from '../models/Responses/ResponseLogin';
 
 @Injectable({
   providedIn: 'root',

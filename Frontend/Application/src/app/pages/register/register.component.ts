@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { faEnvelope, faUser, faKey } from '@fortawesome/free-solid-svg-icons';
-import { RequestRegister } from 'src/app/resources/models/RequestRegister';
+import { RequestRegister } from 'src/app/resources/models/Requests/RequestRegister';
 import { AlertService } from 'src/app/resources/services/alert.service';
 import { RegisterService } from 'src/app/resources/services/register.service';
 

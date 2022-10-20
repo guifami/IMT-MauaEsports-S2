@@ -1,26 +1,52 @@
-<main>
-  <div class="register-box">
-    <h2>Cadastro</h2>
-    <form>
-      <div class="user-box">
-        <input [(ngModel)]="requestRegister.login" type="text" name="" required="" [ngModelOptions]="{ standalone: true }">
-        <label><fa-icon [icon]="faUser"></fa-icon> Usuário</label>
-      </div>
-      <div class="user-box">
-        <input [(ngModel)]="requestRegister.email" type="text" name="" required="" [ngModelOptions]="{ standalone: true }">
-        <label><fa-icon [icon]="faEnvelope"></fa-icon> E-Mail</label>
-      </div>
-      <div class="user-box">
-        <input [(ngModel)]="requestRegister.senha" type="password" name="" required="" [ngModelOptions]="{ standalone: true }">
-        <label><fa-icon [icon]="faKey"></fa-icon> Senha</label>
-      </div>
-      <div class="user-box">
-        <input [(ngModel)]="requestRegister.confirmeSenha" type="password" name="" required="" [ngModelOptions]="{ standalone: true }">
-        <label><fa-icon [icon]="faKey"></fa-icon> Confirme a senha</label>
-      </div>
-      <a (click)="submitRegister()">
-        Cadastrar
-      </a>
-    </form>
-  </div>
-</main>
+<section>
+  <article class="register-box">
+    <header>
+      <h2>Cadastro</h2>
+    </header>
+    <main>
+      <form>
+        <div class="user-box">
+          <input
+            [(ngModel)]="requestRegister.login"
+            type="text"
+            name=""
+            required=""
+            [ngModelOptions]="{ standalone: true }"
+          />
+          <label><fa-icon [icon]="faUser"></fa-icon> Usuário</label>
+        </div>
+        <div class="user-box">
+          <input
+            [(ngModel)]="requestRegister.email"
+            type="text"
+            name=""
+            required=""
+            [ngModelOptions]="{ standalone: true }"
+          />
+          <label><fa-icon [icon]="faEnvelope"></fa-icon> E-Mail</label>
+        </div>
+        <div class="user-box">
+          <input
+            [(ngModel)]="requestRegister.senha"
+            type="password"
+            name=""
+            required=""
+            [ngModelOptions]="{ standalone: true }"
+          />
+          <label><fa-icon [icon]="faKey"></fa-icon> Senha</label>
+        </div>
+        <div class="user-box">
+          <input
+            [(ngModel)]="requestRegister.confirmeSenha"
+            type="password"
+            name=""
+            required=""
+            [ngModelOptions]="{ standalone: true }"
+          />
+          <label><fa-icon [icon]="faKey"></fa-icon> Confirme a senha</label>
+        </div>
+        <a (click)="submitRegister()"> Cadastrar </a>
+      </form>
+    </main>
+  </article>
+</section>

@@ -1,28 +1,32 @@
-<main>
-  <div class="login-box">
-    <h2>Login</h2>
-    <form>
-      <div class="user-box">
-        <input
-          [(ngModel)]="requestLogin.login"
-          type="text"
-          name=""
-          required=""
-          [ngModelOptions]="{ standalone: true }"
-        />
-        <label><fa-icon [icon]="faUser"></fa-icon> Usuário</label>
-      </div>
-      <div class="user-box">
-        <input
-          [(ngModel)]="requestLogin.senha"
-          type="password"
-          name=""
-          required=""
-          [ngModelOptions]="{ standalone: true }"
-        />
-        <label><fa-icon [icon]="faKey"></fa-icon> Senha</label>
-      </div>
-      <a (click)="submitLogin()"> Entrar </a>
-    </form>
-  </div>
-</main>
+<section>
+  <article class="login-box">
+    <header>
+      <h2>Login</h2>
+    </header>
+    <main>
+      <form>
+        <div class="user-box">
+          <input
+            [(ngModel)]="requestLogin.login"
+            type="text"
+            name=""
+            required=""
+            [ngModelOptions]="{ standalone: true }"
+          />
+          <label><fa-icon [icon]="faUser"></fa-icon> Usuário</label>
+        </div>
+        <div class="user-box">
+          <input
+            [(ngModel)]="requestLogin.senha"
+            type="password"
+            name=""
+            required=""
+            [ngModelOptions]="{ standalone: true }"
+          />
+          <label><fa-icon [icon]="faKey"></fa-icon> Senha</label>
+        </div>
+        <a (click)="submitLogin()"> Entrar </a>
+      </form>
+    </main>
+  </article>
+</section>

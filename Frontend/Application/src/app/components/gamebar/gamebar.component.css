@@ -39,7 +39,7 @@
     transform: skewY(-1deg);
 }
 
-main .middle .game-icons img{
+section .middle .game-icons img{
     display: inline-block;
     width: 72px;
     border-radius: 100%;
@@ -49,7 +49,7 @@ main .middle .game-icons img{
     box-shadow: #000000c1 1px 2px 3px 1.5px;
 }
 
-main .middle .game-icons img:hover{
+section .middle .game-icons img:hover{
     opacity: 85%;
     transition: 0.5s ease;
     cursor: pointer;
@@ -57,53 +57,53 @@ main .middle .game-icons img:hover{
 }
 
 @media (max-width: 1200px){
-    main .middle .game-icons{
+    section .middle .game-icons{
         text-align: center;
     }
-    main .middle .game-icons img{
+    section .middle .game-icons img{
         width: 52px;
     }
-    main .middle .game-icons{
+    section .middle .game-icons{
         width: 100%
     }
 }
 
 
 @media (max-width: 950px){
-    main .middle .game-icons img{
+    section .middle .game-icons img{
         width: 45px;
     }
 }
 
 @media (max-width: 830px){
-    main .middle .game-icons{
+    section .middle .game-icons{
         width: 450px;
     }
 }
 
 @media (max-width: 645px){
-    main .middle .game-icons img{
+    section .middle .game-icons img{
         width: 45px;
     }
 }
 
 @media (max-width: 570px){
-    main .middle .game-icons{
+    section .middle .game-icons{
         width: 380px;
     }
 }
 
 @media (max-width: 400px){
-    main .middle{
+    section .middle{
         text-align: center;
     }
-    main .middle .game-icons img{
+    section .middle .game-icons img{
         width: 36px;
     }
 }
 
 @media (max-width: 380px){
-    main .middle .game-icons img{
+    section .middle .game-icons img{
         width: 25px;
     }
 }
