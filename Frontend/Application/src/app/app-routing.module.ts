@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   {
-    path: 'jogos',
+    path: 'games',
     component: JogosComponent,
     children: [
       { path: 'league-of-legends', component: LeagueOfLegendsComponent },

@@ -1,9 +1,9 @@
 <header>
   <app-gamebar></app-gamebar>
 </header>
-<main class="container" *ngIf="router.url === '/jogos'">
+<main class="container" *ngIf="router.url === '/games'">
   <app-game-title [titulo]="'Maua ESports'"></app-game-title>
   <app-grid-graficos></app-grid-graficos>
 </main>
-<app-footer *ngIf="router.url === '/jogos'"></app-footer>
+<app-footer *ngIf="router.url === '/games'"></app-footer>
 <router-outlet></router-outlet>

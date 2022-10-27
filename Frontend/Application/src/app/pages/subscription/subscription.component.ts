@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faEnvelope, faUser, faChevronDown, faGraduationCap, faTrophy, faPhone, faHeadset} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-subscription',
@@ -6,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subscription.component.css']
 })
 export class SubscriptionComponent implements OnInit {
+
+  faUser = faUser
+  faEnvelope = faEnvelope
+  faChevronDown = faChevronDown
+  faGraduationCap = faGraduationCap
+  faTrophy = faTrophy
+  faPhone = faPhone
+  faHeadset = faHeadset
 
   constructor() { }
 

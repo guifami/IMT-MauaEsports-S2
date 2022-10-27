@@ -1,5 +1,371 @@
-main{
-    background-image: linear-gradient(to bottom, #050d21, #081d3d, #0c244b);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+article {
+  width: 100%;
+  height: 85vh;
+}
+
+h1 {
+  margin-top: 100px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 28px;
+  color: #fff;
+}
+
+.subscription-box {
+  display: inline-block;
+  position: absolute;
+  top: 550px;
+  left: 50%;
+  width: 800px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.subscription-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.subscription-box .user-box-name {
+  position: relative;
+  width: 50%;
+  padding-right: 30px;
+  float: left;
+}
+
+.subscription-box .user-box-name input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.subscription-box .user-box-name label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.subscription-box .user-box-name input:focus ~ label,
+.subscription-box .user-box-name input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.subscription-box .user-box-email {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
+.subscription-box .user-box-email input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.subscription-box .user-box-email label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.subscription-box .user-box-email input:focus ~ label,
+.subscription-box .user-box-email input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.subscription-box .user-box-email {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
+.subscription-box .user-box-email input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.subscription-box .user-box-email label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.subscription-box .user-box-games {
+  position: relative;
+  width: 100%;
+  float: right;
+}
+
+.subscription-box .user-box-games label {
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.subscription-box .user-box-select-games {
+  margin-top: 8px;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border: 1px solid #fff;
+  padding: 2px;
+}
+
+.subscription-box .user-box-cursos {
+  margin-top: 5px;
+  position: relative;
+  width: 40%;
+  float: left;
+}
+
+.subscription-box .user-box-cursos label {
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.subscription-box .user-box-select-cursos {
+  margin-top: 8px;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border: 1px solid #fff;
+  padding: 2px;
+}
+
+.subscription-box .user-box-celular input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.subscription-box .user-box-celular label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.subscription-box .user-box-celular input:focus ~ label,
+.subscription-box .user-box-celular input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.subscription-box .user-box-celular {
+  margin-top: 20px;
+  position: relative;
+  width: 60%;
+  float: left;
+  padding-right: 30px;
+}
+
+.subscription-box .user-box-celular input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.subscription-box .user-box-celular label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.subscription-box .user-box-motivo {
+  margin-top: 25px;
+  position: relative;
+  width: 100%;
+  float: left;
+  padding-right: 30px;
+}
+
+.subscription-box .user-box-motivo label {
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+#motivo{
+  margin-top: 8px;
+  width: 720px;
+  height: 200px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  resize: none;
+  color: #fff;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.enviar-inscricao{
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  color: #fff;
+  border: solid 2px #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  float: right;
+}
+
+.enviar-inscricao:hover{
+  background-color: #fff;
+  transition: 0.3s ease;
+  color: #222;
+}
+
+@media (max-width: 768px){
+  .subscription-box{
+    width: 90%;
+  }
+  #motivo{
+    padding: 0;
+    width: 79vw;
+  }
+}
+
+@media (max-width: 710px){
+  .subscription-box{
+    top: 620px;
     width: 100%;
-    height: 100vh;
+  }
+  .subscription-box .user-box-name{
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+  .subscription-box .user-box-name input{
+    display: block;
+    width: 100%;
+  }
+  .subscription-box .user-box-email{
+    margin: 0;
+    display: block;
+    width: 100%;
+  }
+  .subscription-box .user-box-email input{
+    display: block;
+    width: 100%;
+  }
+  .subscription-box .user-box-celular{
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+  }
+  .subscription-box .user-box-celular input{
+    display: block;
+    width: 100%;
+  }
+  .subscription-box .user-box-cursos{
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .subscription-box .user-box-games{
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    float: left;
+  }
+  #motivo{
+    width: 106%;
+  }
+}
+
+@media (max-width: 350px){
+  /*Definir*/
 }
