@@ -4,7 +4,9 @@
 }
 
 body{
-    background-image: linear-gradient(to bottom, #050d21, #081d3d, #0c244b);
+    /* background-image: linear-gradient(to bottom, #050d21, #081d3d, #0c244b); */
+    background-image: linear-gradient(to bottom, #050d21, #081d3d, #00587b);
     background-repeat: no-repeat;
-    height: 100%;
+    background-attachment: fixed;
+    height: auto;
 }

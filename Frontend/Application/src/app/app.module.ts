@@ -27,6 +27,7 @@ import { LineChartComponent } from './components/charts/line-chart/line-chart.co
 import { GridGraficosComponent } from './components/grid-graficos/grid-graficos.component';
 import { AboutComponent } from './pages/about/about.component';
 import { SubscriptionComponent } from './pages/subscription/subscription.component';
+import { PlayerCardComponent } from './components/player-card/player-card.component';
 // Games Components
 import { LeagueOfLegendsComponent } from './pages/Jogos/league-of-legends/league-of-legends.component';
 import { TeamfightTacticsComponent } from './pages/Jogos/teamfight-tactics/teamfight-tactics.component';
@@ -71,7 +72,8 @@ import { JogosComponent } from './pages/Jogos/Jogos.component';
     DoughnutChartComponent,
     LineChartComponent,
     AboutComponent,
-    SubscriptionComponent
+    SubscriptionComponent,
+    PlayerCardComponent
   ],
   imports: [
     BrowserModule,

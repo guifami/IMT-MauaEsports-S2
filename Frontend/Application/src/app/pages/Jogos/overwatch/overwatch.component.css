@@ -1,13 +1,8 @@
 .container {
-  height: 110vh;
+  height: 100vh;
   width: 100%;
   background: url(/assets/images/game-images/back-overwatch.png) no-repeat;
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
-}
-@media (max-width: 1100px) {
-  .container {
-    height: 200vh;
-  }
 }
