@@ -12,7 +12,7 @@ export class LoginService {
   private baseURL!: string;
 
   constructor(private httpClient: HttpClient) {
-    this.baseURL = 'https://mauaesportsapinewversion.herokuapp.com';
+    this.baseURL = 'https://mauaesportsapioficial.herokuapp.com';
   }
 
   public submitLogin(requestLogin: RequestLogin): Observable<ResponseLogin> {

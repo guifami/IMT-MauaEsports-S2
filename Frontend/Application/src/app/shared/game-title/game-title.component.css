@@ -8,12 +8,12 @@
 }
 
 h1{
-    color: #fff;
+    color: #d29320;
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: 2.4em;
     text-transform: uppercase;
-    text-shadow: 2px 2px #000;
+    text-shadow: 1px 10px #4e350717;
     transition: 0.3s ease;
 }
 

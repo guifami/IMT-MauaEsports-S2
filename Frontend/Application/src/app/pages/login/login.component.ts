@@ -30,7 +30,6 @@ export class LoginComponent implements OnInit {
     },
     error => {
       this.alertService.error('Usuário ou senha inválidos.', '');
-      console.error(error);
     });
   }
 }

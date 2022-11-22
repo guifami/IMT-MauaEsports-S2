@@ -1,10 +1,57 @@
 <main class="container">
+  <article class="main-content">
   <app-game-title [titulo]="'League of Legends'"></app-game-title>
-  <section class="main-content">
     <div class="content">
-      <h1>Time Principal</h1>
-      <div class="spacer"></div>
+      <section class="content-text">
+        <h1>Competitivo</h1>
+        <div class="spacer"></div>
+        <p>O que é <b>League of Legends</b>? League of Legends é um jogo de estratégia em que duas equipes 
+          de cinco poderosos Campeões se enfrentam para destruir a base uma da outra. Escolha entre 
+          mais de <b>140 Campeões</b> para realizar jogadas épicas, assegurar abates e destruir torres 
+          conforme você luta até a vitória.</p>
+          <section class="flex-content">
+            <div class="left-content">
+              <img id="direita" src="/assets/images/game-character/char-lol.png" alt="Personagem do jogo League of Legends">
+            </div>
+            <div class="right-content">
+              <h2>Resumo</h2>
+              <p>
+                Duas equipes de cinco jogadores competem para destruir o <b>"Nexus"</b> do time adversário — uma grande 
+                estrutura que é protegida pelos campeões oponentes e por fortificações conhecidas como 
+                <b>"torres"</b>. O Nexus de cada equipe está localizado em sua base — local onde os jogadores 
+                começam uma partida ou reaparecem após a morte.
+              </p>
+            </div>
+          </section>
+      </section>
+    </div>
+  </article>
+</main>
+<article class="team-main-content">
+  <section class="team-content">
+    <h3>Time principal</h3>
+    <div class="lanes">
+      <div class="tank">
+        <img src="/assets/images/game-lanes/tank-lol.png" alt="Tank">
+        <p>riifth</p>
+      </div>
+      <div class="fighter">
+        <img src="/assets/images/game-lanes/fighter-lol.png" alt="Fighter">
+        <p>rafafami</p>
+      </div>
+      <div class="mage">
+        <img src="/assets/images/game-lanes/mage-lol.png" alt="Mage">
+        <p>guifami</p>
+      </div>
+      <div class="marksman">
+        <img src="/assets/images/game-lanes/marksman-lol.png" alt="Marksman">
+        <p>indie</p>
+      </div>
+      <div class="support">
+        <img src="/assets/images/game-lanes/support-lol.png" alt="Support">
+        <p>positions</p>
+      </div>
     </div>
   </section>
-</main>
+</article>
 <app-footer></app-footer>

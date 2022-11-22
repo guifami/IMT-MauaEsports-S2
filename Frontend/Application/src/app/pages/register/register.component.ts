@@ -30,8 +30,7 @@ export class RegisterComponent implements OnInit {
       this.router.navigate(['login']);
     },
     error => {
-      this.alertService.error('Todos os campos são obrigatórios', '');
-      console.error(error);
+      this.alertService.error(error.error, '');
     });
   }
 
