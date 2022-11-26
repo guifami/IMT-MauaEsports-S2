@@ -25,10 +25,10 @@ export class LoginComponent implements OnInit {
   }
 
   public submitLogin(): void{
-    this.loginService.submitLogin(this.requestLogin).subscribe(data => {
+    this.loginService.submitLogin(this.requestLogin).subscribe(_data => {
       this.router.navigate(['home']);
     },
-    error => {
+    _error => {
       this.alertService.error('Usuário ou senha inválidos.', '');
     });
   }

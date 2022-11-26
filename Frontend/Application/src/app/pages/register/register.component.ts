@@ -30,7 +30,28 @@ export class RegisterComponent implements OnInit {
       this.router.navigate(['login']);
     },
     error => {
-      this.alertService.error(error.error, '');
+      if(error.error.message == `O login '${this.requestRegister.login}' ja existe.`)
+        this.alertService.error(`O Usuário '${this.requestRegister.login}' já existe.`, '');
+
+      if(error.error.message == "Todos os campos sao necessarios")
+        this.alertService.error('Todos os campos são obrigatórios.', '');
+
+      if(error.error.message == "O campo confirmarSenha deve ser igual ao campo senha")
+        this.alertService.error('As senhas não se conferem.', '');      
+
+      if(error.error.message.login == "O campo 'Usuario' nao pode estar em branco")
+        this.alertService.error('Usuário não pode estar em branco.', '');
+
+      if(error.error.message.senha == "O campo 'senha' nao pode estar em branco")
+        this.alertService.error('Senha não pode estar em branco.', '');
+
+      if(error.error.message.email == "O campo 'email' nao pode estar em branco")
+        this.alertService.error('email não pode estar em branco.', '');
+
+      if(error.error.message.confirmarSenha == "O campo 'confirmarSenha' nao pode estar em branco")
+        this.alertService.error('Confirmar senha não pode estar em branco.', '');
+
+      console.error(error);
     });
   }
 
