@@ -1,24 +1,23 @@
-<section>
+<section *ngIf="!checkRequestIsSent() && checkUserAuthToSub()">
   <article class="container">
     <h1>Inscreva-se</h1>
     <main class="subscription-box">
       <form>
         <div class="user-box-name">
-          <input type="text" required />
-          <label><fa-icon [icon]="faUser"></fa-icon> Nome</label>
+          <input type="text" [(ngModel)]="requestSubscription.nome" [ngModelOptions]="{ standalone: true }" required />
+          <label> <fa-icon [icon]="faUser"></fa-icon> Nome </label>
         </div>
         <div class="user-box-email">
-          <input type="text" required />
-          <label><fa-icon [icon]="faEnvelope"></fa-icon> E-Mail</label>
+          <input type="text" [(ngModel)]="requestSubscription.email" [ngModelOptions]="{ standalone: true }" required />
+          <label> <fa-icon [icon]="faEnvelope"></fa-icon> E-Mail </label>
         </div>
         <div class="user-box-celular">
-          <input type="text" required/>
-          <label><fa-icon [icon]="faPhone"></fa-icon> Celular</label>
+          <input type="text" [(ngModel)]="requestSubscription.celular" [ngModelOptions]="{ standalone: true }" required />
+          <label> <fa-icon [icon]="faPhone"></fa-icon> Celular </label>
         </div>
         <div class="user-box-cursos">
-          <label><fa-icon [icon]="faGraduationCap"></fa-icon> Curso</label>
-          <select class="user-box-select-cursos">
-            <option value="default">-- Nenhum --</option>
+          <label> <fa-icon [icon]="faGraduationCap"></fa-icon> Curso </label>
+          <select class="user-box-select-cursos"  [(ngModel)]="requestSubscription.curso" [ngModelOptions]="{ standalone: true }" >
             <option value="First Choice">Engenharia</option>
             <option value="Second Choice">Admnistração</option>
             <option value="Third Choice">Design</option>
@@ -27,9 +26,11 @@
           </select>
         </div>
         <div class="user-box-games">
-          <label><fa-icon [icon]="faTrophy"></fa-icon> Qual equipe você deseja participar?</label>
-          <select class="user-box-select-games">
-            <option value="default">-- Nenhum --</option>
+          <label>
+            <fa-icon [icon]="faTrophy"></fa-icon> Qual equipe você deseja
+            participar?
+          </label>
+          <select class="user-box-select-games" [(ngModel)]="requestSubscription.equipe" [ngModelOptions]="{ standalone: true }" >
             <option value="primeira">Staff</option>
             <option value="segunda">Overwtach</option>
             <option value="terceira">Rainbow six</option>
@@ -44,11 +45,39 @@
           </select>
         </div>
         <div class="user-box-motivo">
-          <label><fa-icon [icon]="faHeadset"></fa-icon> Por que você quer fazer parte da Mauá E-sports?</label>
-          <textarea id="motivo"></textarea>
+          <label>
+            <fa-icon [icon]="faHeadset"></fa-icon> Por que você quer fazer parte
+            da Mauá E-sports?
+          </label>
+          <textarea id="motivo" [(ngModel)]="requestSubscription.descricao" [ngModelOptions]="{ standalone: true }" ></textarea>
         </div>
-        <a class="enviar-inscricao">enviar</a>
+        <a class="enviar-inscricao" (click)="sendRequest()">enviar</a>
       </form>
     </main>
+  </article>
+</section>
+<section *ngIf="checkRequestIsSent() && checkUserAuthToSub()">
+  <article class="container">
+    <header class="info">
+      <h2>
+        <fa-icon [icon]="faTriangleExclamation" id="info-icon"></fa-icon>ﾠVocê
+        já se inscreveu, estamos analisando seu perfil.
+      </h2>
+      <h3>Nossa equipe entrará em contato por e-mail.</h3>
+      <h3>Boa sorte ;)</h3>
+    </header>
+  </article>
+</section>
+<section *ngIf="!checkUserAuthToSub()">
+  <article class="container">
+    <header class="info">
+      <h2>
+        <fa-icon [icon]="faLock" id="lock-icon"></fa-icon>ﾠVocê precisa de um
+        cadastro para se inscrever.
+      </h2>
+      <h3>
+        ainda não possui uma conta? clique <a routerLink="/register">aqui</a>
+      </h3>
+    </header>
   </article>
 </section>

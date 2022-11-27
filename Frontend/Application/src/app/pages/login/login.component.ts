@@ -12,6 +12,7 @@ import { faEnvelope, faKey, faUser } from '@fortawesome/free-solid-svg-icons';
 })
 export class LoginComponent implements OnInit {
   
+  public isLogged!: boolean;
   public requestLogin!: RequestLogin;
 
   faUser = faUser
@@ -26,6 +27,8 @@ export class LoginComponent implements OnInit {
 
   public submitLogin(): void{
     this.loginService.submitLogin(this.requestLogin).subscribe(_data => {
+      this.isLogged = true;
+      this.loginService.isLogged = this.isLogged;
       this.router.navigate(['home']);
     },
     _error => {

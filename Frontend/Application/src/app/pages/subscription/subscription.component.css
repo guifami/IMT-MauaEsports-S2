@@ -22,6 +22,46 @@ h1 {
   color: #fff;
 }
 
+h2 {
+  margin-top: 200px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 25px;
+  color: #fff;
+}
+
+h3 {
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 25px;
+  color: #fff;
+}
+
+h3 a{
+  color: #d39420;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+h3 a:hover{
+  color: #d39420b2;
+  transition: 0.3s ease;
+}
+
+#info-icon{
+  font-size: 30px;
+  color: #fcff59;
+}
+
+#lock-icon{
+  font-size: 30px;
+  color: #59c9ff;
+}
+
 .subscription-box {
   display: inline-block;
   position: absolute;
@@ -413,6 +453,17 @@ h1 {
   h1{
     margin-left: 3rem;
     font-size: 20px;
+  }
+  h2{
+    margin-left: 3rem;
+    font-size: 17px;
+    padding: 0;
+
+  }
+  h3{
+    margin-left: 3rem;
+    font-size: 17px;
+    padding: 0;
   }
   .enviar-inscricao{
     font-size: 13px;

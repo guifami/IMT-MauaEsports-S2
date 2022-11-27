@@ -15,9 +15,10 @@
       <a href="#" routerLink="games">Jogos</a>
       <a href="#" routerLink="subscription">Inscrição</a>
       <div class="spacer"></div>
-      <button id="loginBtn" routerLink="login">Login</button>
-      <p>Ainda não possui um Login?</p>
-      <button id="registerBtn" routerLink="register">Sign Up</button>
+      <a href="#" *ngIf="checkUserIsLogged()" (click)="logout()">{{username}}ﾠ<fa-icon [icon]="faRightFromBracket"></fa-icon></a>
+      <button *ngIf="!checkUserIsLogged()" id="loginBtn" routerLink="login">Login</button>
+      <p *ngIf="!checkUserIsLogged()">Ainda não possui um Login?</p>
+      <button *ngIf="!checkUserIsLogged()" id="registerBtn" routerLink="register">Sign Up</button>
     </article>
   </section>
 </nav>
