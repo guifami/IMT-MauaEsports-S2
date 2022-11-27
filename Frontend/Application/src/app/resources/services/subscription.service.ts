@@ -18,7 +18,7 @@ constructor(private alertService: AlertService, private router: Router,) { }
     {
       this.requestIsSent = true;
       this.router.navigate(['home']);
-      this.alertService.success('Solicitação enviada com sucesso! Aguarde enquanto verificamos seus requisitos.', '');
+      this.alertService.success('Solicitação enviada com sucesso! Aguarde enquanto verificamos seus registros.', '');
     }
     else
       this.alertService.error('Você já se inscreveu, estamos analisando seu perfil. Nossa equipe entrará em contato pelo seu e-mail. Boa sorte!', '');
