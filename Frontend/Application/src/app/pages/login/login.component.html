@@ -25,7 +25,8 @@
           />
           <label><fa-icon [icon]="faKey"></fa-icon> Senha</label>
         </div>
-        <a (click)="submitLogin()"> Entrar </a>
+        <div id="loading" *ngIf="isLoading"></div>
+        <a (click)="submitLogin()" (click)="loading()" *ngIf="!isLoading"> Entrar </a>
       </form>
     </main>
   </article>

@@ -12,6 +12,7 @@ import { RegisterService } from 'src/app/resources/services/register.service';
 })
 export class RegisterComponent implements OnInit {
 
+  public isLoading!: boolean;
   public requestRegister!: RequestRegister;
 
   faUser = faUser
@@ -30,6 +31,8 @@ export class RegisterComponent implements OnInit {
       this.router.navigate(['login']);
     },
     error => {
+      this.isLoading = false;
+      
       if(error.error.message == `O login '${this.requestRegister.login}' ja existe.`)
         this.alertService.error(`O Usuário '${this.requestRegister.login}' já existe.`, '');
 
@@ -51,8 +54,12 @@ export class RegisterComponent implements OnInit {
       if(error.error.message.confirmarSenha == "O campo 'confirmarSenha' nao pode estar em branco")
         this.alertService.error('Confirmar senha não pode estar em branco.', '');
 
-      console.error(error);
-    });
+      });
+  }
+
+  public loading(): boolean{
+    this.isLoading = true;
+    return true;
   }
 
 }

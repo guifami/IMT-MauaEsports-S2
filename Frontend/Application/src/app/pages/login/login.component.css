@@ -90,6 +90,26 @@
   .login-box a:hover {
     background: #103d55;
   }
+
+  #loading {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: -15px;
+    margin-left: 42%;
+    border: 3px solid #081d3d;
+    border-radius: 50%;
+    border-top-color: #30cfd3;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
   
   @media (max-width: 570px){
     .login-box {

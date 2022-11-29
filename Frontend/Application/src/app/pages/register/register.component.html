@@ -45,7 +45,8 @@
           />
           <label><fa-icon [icon]="faKey"></fa-icon> Confirme a senha</label>
         </div>
-        <a (click)="submitRegister()"> Cadastrar </a>
+        <div id="loading" *ngIf="isLoading"></div>
+        <a (click)="submitRegister()" (click)="loading()" *ngIf="!isLoading"> Cadastrar </a>
       </form>
     </main>
   </article>

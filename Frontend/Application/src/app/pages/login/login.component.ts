@@ -12,6 +12,7 @@ import { faEnvelope, faKey, faUser } from '@fortawesome/free-solid-svg-icons';
 })
 export class LoginComponent implements OnInit {
   
+  public isLoading!: boolean;
   public isLogged!: boolean;
   public requestLogin!: RequestLogin;
 
@@ -33,6 +34,12 @@ export class LoginComponent implements OnInit {
     },
     _error => {
       this.alertService.error('Usuário ou senha inválidos.', '');
+      this.isLoading = false;
     });
+  }
+
+  public loading(): boolean{
+    this.isLoading = true;
+    return true;
   }
 }
