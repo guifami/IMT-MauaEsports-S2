@@ -10,12 +10,12 @@
   ></section>
   <section class="nav" (click)="menuClick()" [class.active]="isCollapsed">
     <article class="nav-items">
-      <a href="#" routerLink="home">Home</a>
-      <a href="#" routerLink="about">Sobre</a>
-      <a href="#" routerLink="games">Jogos</a>
-      <a href="#" routerLink="subscription">Inscrição</a>
+      <a class="nav-link" href="#" routerLink="home">Home</a>
+      <a class="nav-link" href="#" routerLink="about">Sobre</a>
+      <a class="nav-link" href="#" routerLink="games">Jogos</a>
+      <a class="nav-link" href="#" routerLink="subscription">Inscrição</a>
       <div class="spacer"></div>
-      <a href="#" *ngIf="checkUserIsLogged()" (click)="logout()">{{username}}ﾠ<fa-icon [icon]="faRightFromBracket"></fa-icon></a>
+      <a href="#" *ngIf="checkUserIsLogged()" (click)="logout()" class="nav-logout">{{username}}ﾠ<fa-icon [icon]="faRightFromBracket"></fa-icon></a>
       <button *ngIf="!checkUserIsLogged()" id="loginBtn" routerLink="login">Login</button>
       <p *ngIf="!checkUserIsLogged()">Ainda não possui um Login?</p>
       <button *ngIf="!checkUserIsLogged()" id="registerBtn" routerLink="register">Sign Up</button>

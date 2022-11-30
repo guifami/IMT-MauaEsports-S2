@@ -33,7 +33,22 @@ nav .brand img{
     width: 50px;
 }
 
-nav .nav .nav-items a{
+nav .nav .nav-items .nav-logout{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+nav .nav .nav-items .nav-logout:hover{
+    opacity: 80%;
+    transition: 0.3s ease;
+}
+
+nav .nav .nav-items .nav-link{
     position: relative;
     color: #fff;
     font-size: 1em;
@@ -97,7 +112,7 @@ nav .nav .nav-items a{
     transition: 0.3s ease;
 }
 
-nav .nav .nav-items a:before{
+nav .nav .nav-items .nav-link:before{
     content: '';
     position: absolute;
     background: #68d1c0;
@@ -108,8 +123,22 @@ nav .nav .nav-items a:before{
     transition: 0.3s ease;
 }
 
-nav .nav .nav-items a:hover:before{
+nav .nav .nav-items .nav-link:hover:before{
     width: 100%;
+}
+
+.logout-text:before{
+    content: '';
+    position: absolute;
+    background: none;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.logout-text:after{
+    width: 0;
 }
 
 @media (max-width: 1480px){
@@ -141,7 +170,15 @@ nav .nav .nav-items a:hover:before{
         background: rgba(1, 1, 1, 0.5);
     }
 
-    nav .nav .nav-items a{
+    nav .nav .nav-items .nav-logout{
+        color: #222;
+        font-size: 1.2em;
+        font-weight: 500;
+        margin-left: 0;
+        margin: 16px;
+    }
+
+    nav .nav .nav-items .nav-link{
         color: #222;
         font-size: 1.2em;
         font-weight: 500;
