@@ -105,6 +105,12 @@
               "node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/IMT-MauaEsports-S2/"
+          }
         }
       }
     }
