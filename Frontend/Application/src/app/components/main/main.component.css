@@ -63,7 +63,7 @@ b {
 }
 
 .pop-content {
-  background: url(/assets/images/home-images/banner1.png);
+  background: url(https://guifami.github.io/IMT-MauaEsports-S2/assets/images/home-images/banner1.png);
   width: 100%;
   max-width: 1200px;
   height: 100%;
@@ -172,7 +172,7 @@ b {
   border-radius: 5px;
   margin-left: 5px;
   box-shadow: 2px 0px 50px -10px #89d9e4a1;
-  background: url(/assets/images/home-images/banner.png) no-repeat;
+  background: url(https://guifami.github.io/IMT-MauaEsports-S2/assets/images/home-images/banner.png) no-repeat;
   background-size: cover;
 }
 
@@ -251,7 +251,7 @@ b {
 
 @media (max-width: 1430px) {
   .pop-content {
-    background: url(/assets/images/home-images/banner1-1430.png);
+    background: url(https://guifami.github.io/IMT-MauaEsports-S2/assets/images/home-images/banner1-1430.png);
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -268,7 +268,7 @@ b {
 
 @media (max-width: 1230px) {
   .pop-content {
-    background: url(/assets/images/home-images/banner1-1230.png);
+    background: url(https://guifami.github.io/IMT-MauaEsports-S2/assets/images/home-images/banner1-1230.png);
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -335,7 +335,7 @@ b {
     width: 100%;
   }
   .pop-content {
-    background: url(/assets/images/home-images/banner1-780.png);
+    background: url(https://guifami.github.io/IMT-MauaEsports-S2/assets/images/home-images/banner1-780.png);
     width: 100%;
     height: 100%;
     overflow: auto;
