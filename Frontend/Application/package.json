@@ -6,7 +6,9 @@
     "start": "ng serve -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy:ghdocs": "ng build --output-path docs --base-href /IMT-MauaEsports-S2/"
+
   },
   "private": true,
   "dependencies": {
